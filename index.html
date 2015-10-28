@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Forms</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<br><br><br><br>
+		<form method="GET" action="http://prog1390.soupbowl.ca/form" class="form">
+		
+		<div class="form-group">
+			<label for="username">User Name</label>
+			<input type="email" id="username" name="username" placeholder="Hey there, enter your username!" class="form-control" required />	
+		</div>
+		
+		<div class="form-group">
+			<p>Password</p>
+			<input type="password" name="password" class="form-control" />	
+		</div>
+	
+		<div class="form-group">
+			<p>Select your favourite animal(s), if any:</p>
+
+			<input type="checkbox" id="dog" name="fav_animals[]" value="Dog" />	<label for="dog">Dog</label><br />
+
+			<input type="checkbox" id="cat" name="fav_animals[]" value="Cat" /> <label for="cat">Cat</label><br />
+			
+			<input type="checkbox" id="bird" name="fav_animals[]" value="Bird" /> <label for="bird">Bird</label>
+		</div>
+		
+		<div class="form-group">
+			<p>Select a dough type:</p>
+
+			<input type="radio" name="dough_type" value="White" /> White <br />
+			<input type="radio" name="dough_type" value="Wheat" /> Wheat <br />
+			<input type="radio" name="dough_type" value="Sourdough" /> Sourdough <br />
+			<input type="radio" name="dough_type" value="Tofu" /> Tofu
+		</div>
+		
+		<div class="form-group">
+			<p>Leave us a comment:</p>
+			<textarea style="resize: none;" name="comment"></textarea>	
+		</div>
+
+		<div class="form-group">
+			<p>Select a province:</p>
+			<select name="province">
+				<option value="AB">Alberta</option>
+				<option value="BC">British Columbia</option>
+				<option value="MB">Manitoba</option>
+				<option value="NB">New Brunswick</option>
+				<option value="NL">Newfoundland and Labrador</option>
+				<option value="NS">Nova Scotia</option>
+				<option value="ON">Ontario</option>
+				<option value="PE">Prince Edward Island</option>
+				<option value="QC">Quebec</option>
+				<option value="SK">Saskatchewan</option>
+				<option value="NT">Northwest Territories</option>
+				<option value="NU">Nunavut</option>
+				<option value="YT">Yukon</option>
+			</select>		
+		</div>
+		
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Login</button>	
+		</div>
+	
+	</form>	
+	</div>
+	
+</body>
+</html>
